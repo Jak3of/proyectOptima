@@ -1,0 +1,19 @@
+<header class="encabezado">
+    <div class="container">
+        <div class="logo-container">
+            <a href="#" class="logo">
+                <img id="logo" src="https://optimainmobiliaria.com/wp-content/uploads/2020/05/Logo-optima.png" height="54" width="173" alt="menu">
+            </a>
+        </div>
+        <nav class="navegacion">
+            <ul class="lista">
+                <li><a href="/inicio">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li *ngIf="!userLoginOn"><a href="/iniciar-sesion">Iniciar Sesion</a></li>
+                <li *ngIf="userLoginOn"><a href="/inicio">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
